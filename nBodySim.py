@@ -12,7 +12,7 @@ S = [
     , ( 1.8e11, -2.0e11,  1.0e11,  1.4e30,  28e3, 1.5*np.pi, -0.8*np.pi)  
 ]
 
-## tuple format: (x_0, y_0, z_0, mass, velocity, angle from x axis, angle from z axis)
+## tuple format: (x_0, y_0, z_0, mass, velocity magnitude, velocity angle from x axis, velocity angle from z axis)
 
 G = 6.67 * 10 ** (-11) ## Gravitational constant [N * m^2/kg^2]
 n = 7 ## Number of years
@@ -148,3 +148,4 @@ animation_system.save("fiveBodySimulation.gif"
 
 
 plt.show()
+

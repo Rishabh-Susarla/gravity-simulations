@@ -142,10 +142,6 @@ def update_data(frame):
 
 animation_system = FuncAnimation(fig = fig, func = update_data, frames = len(t), interval = 0.05, repeat = False, blit = True)
 
-animation_system.save("fiveBodySimulation.gif"
-                      , writer = 'pillow'
-                      , fps = 30)
-
-
 plt.show()
+
 

@@ -9,7 +9,7 @@ S = [
     , (-1e9, -1e9, -1e9, 3e26, 1000, np.pi/4, np.pi/4)
 ]
 
-## tuple format: (x_0, y_0, z_0, mass, velocity, angle from x axis, angle from z axis)
+## tuple format: (x_0, y_0, z_0, mass, velocity magnitude, velocity angle from x axis, velocity angle from z axis)
 G = 6.67 * 10 ** (-11) ## Gravitational constant [N * m^2/kg^2]
 n = 7 ## Number of years
 
@@ -123,5 +123,6 @@ def update_data(frame):
     return animated_trail_1, animated_trail_2, animated_planet_1, animated_planet_2
 
 animation_system = FuncAnimation(fig = fig, func = update_data, frames = len(t), interval = 0.00005, repeat = False, blit = True)
+
 
 plt.show()
